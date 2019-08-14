@@ -1,4 +1,4 @@
-package no.nav.familie.ks.mottak.config;
+package no.nav.familie.ks.okonomi.config;
 
 import org.springframework.context.ConfigurableApplicationContext;
 
