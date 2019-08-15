@@ -1,6 +1,6 @@
 spring:
   cloud:
-    vault:￿
+    vault:
       enabled: true
       uri: https://vault.adeo.no
       connection-timeout: 5000
@@ -10,7 +10,7 @@ spring:
         lifecycle.enabled: true
       database:
         enabled: true
-        role: familie-ks-￿okonomi-admin
+        role: familie-ks-okonomi-admin
         backend: postgresql/preprod-fss
       authentication: KUBERNETES
       kubernetes:
