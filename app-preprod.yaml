@@ -37,3 +37,6 @@ spec:
     - https://familie-ks-okonomi.nais.preprod.local
   secureLogs:
     enabled: true
+  env:
+    - name: SPRING_PROFILES_ACTIVE
+      value: preprod
