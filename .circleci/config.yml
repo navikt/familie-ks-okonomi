@@ -131,7 +131,6 @@ workflows:
         context: familie-ci
         requires:
         - deploy_docker
-        - github_app
         filters:
           tags:
             only: /^.*/
@@ -141,7 +140,6 @@ workflows:
         context: familie-ci
         requires:
         - deploy_docker
-        - github_app
         filters:
           branches:
             ignore: /.*/
