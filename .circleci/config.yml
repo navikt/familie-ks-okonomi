@@ -127,11 +127,6 @@ workflows:
         filters:
           tags:
             only: /^v[0-9]+\.[0-9]+$/
-    - github_app:
-        context: familie-ci
-        filters:
-          tags:
-            only: /^v[0-9]+\.[0-9]+$/
     - deploy_dev:
         context: familie-ci
         requires:
