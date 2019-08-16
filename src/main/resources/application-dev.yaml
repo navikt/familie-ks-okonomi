@@ -3,4 +3,4 @@ spring:
     console:
       enabled: true
   flyway:
-    enabled: false
+    enabled: true
