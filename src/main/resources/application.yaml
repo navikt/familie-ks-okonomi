@@ -5,13 +5,15 @@ management:
     base-path: "/internal"
   metrics.export.prometheus.enabled: true
 
-  server:
-    servlet:
-      context-path: /
+server:
+  servlet:
+    context-path: /
 
 spring:
-  flyway:
-    enabled: true
+  autoconfigure.exclude: org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration
   datasource:
     hikari:
       maximum-pool-size: 2
+  flyway:
+    enabled: true
+  main.banner-mode: "off"
