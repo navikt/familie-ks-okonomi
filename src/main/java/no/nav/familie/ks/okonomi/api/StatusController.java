@@ -2,6 +2,8 @@ package no.nav.familie.ks.okonomi.api;
 
 import no.nav.familie.ks.okonomi.db.ØkonomiJdbcRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,13 +19,13 @@ public class StatusController {
     }
 
     @GetMapping("/isAlive")
-    public String isAlive() {
-        return "OK";
+    public ResponseEntity isAlive() {
+        return new ResponseEntity(HttpStatus.OK);
     }
 
     @GetMapping("/isReady")
-    public String isReady() {
+    public ResponseEntity isReady() {
         økonomiDb.ping();
-        return "OK";
+        return new ResponseEntity(HttpStatus.OK);
     }
 }
