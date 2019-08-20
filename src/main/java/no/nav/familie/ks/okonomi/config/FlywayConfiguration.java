@@ -12,7 +12,6 @@ import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 
 @Configuration
 @Profile("!dev")
-@ConditionalOnProperty("spring.flyway.enabled")
 @EnableJdbcRepositories
 public class FlywayConfiguration {
 
