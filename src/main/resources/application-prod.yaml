@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://A01DBVL010.adeo.no:5432/familie-ks-okonomi
+
+# Appdynamics
+APPDYNAMICS_CONTROLLER_HOST_NAME: appdynamics.adeo.no
+APPDYNAMICS_CONTROLLER_PORT: 443
+APPDYNAMICS_CONTROLLER_SSL_ENABLED: true
+APPDYNAMICS_AGENT_ACCOUNT_NAME: PROD

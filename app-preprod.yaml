@@ -14,7 +14,7 @@ spec:
     initialDelay: 30
     failureThreshold: 10
   readiness:
-    path: /internal/status/isAlive
+    path: /internal/status/isReady
     initialDelay: 30
     failureThreshold: 10
   prometheus:
@@ -37,3 +37,6 @@ spec:
     - https://familie-ks-okonomi.nais.preprod.local
   secureLogs:
     enabled: true
+  env:
+    - name: SPRING_PROFILES_ACTIVE
+      value: preprod
